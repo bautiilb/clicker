@@ -8,7 +8,7 @@ namespace RPG
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
-        Player player;
+        PC player;
 
         public Game1()
         {

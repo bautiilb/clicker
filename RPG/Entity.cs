@@ -14,5 +14,11 @@ namespace RPG
         public Texture2D texture;
         public string name;
         public int HP;
+
+        public Entity(string name, int HP)
+        {
+            this.name = name;
+            this.HP = HP;
+        }
     }
 }
