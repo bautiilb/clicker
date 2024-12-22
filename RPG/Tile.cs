@@ -38,7 +38,7 @@ namespace RPG
 
             // Define a drawing rectangle based on the number of tiles wide and high, using the texture dimensions.
             t_position = new Vector2(48 * Convert.ToInt32(t_position.X), 48 * Convert.ToInt32(t_position.Y));
-            targetRectangle = new Rectangle(0, 0, Convert.ToInt32(t_position.X) , Convert.ToInt32(t_position.Y) );
+            targetRectangle = new Rectangle(0, 0, Convert.ToInt32(t_position.X), Convert.ToInt32(t_position.Y));
 
 
             // Center the rectangle on the screen, using both the screen center and the rectangle center.
@@ -46,9 +46,8 @@ namespace RPG
         }
         public void Draw(SpriteBatch _spriteBatch)
         {
-            _spriteBatch.Begin(SpriteSortMode.FrontToBack, BlendState.Opaque, SamplerState.LinearWrap, DepthStencilState.Default, RasterizerState.CullNone);
+            // _spriteBatch.Begin(SpriteSortMode.FrontToBack, BlendState.Opaque, SamplerState.LinearWrap, DepthStencilState.Default, RasterizerState.CullNone
             _spriteBatch.Draw(texture, r_position, targetRectangle, Color.White, 0, Vector2.Zero, 1, SpriteEffects.None, 0);
-            _spriteBatch.End();
         }
     }
 }

@@ -64,12 +64,12 @@ namespace RPG
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
-
+            _spriteBatch.Begin();
             foreach(Tile tile in tiles)
             {
                 tile.Draw(_spriteBatch);
             }
-            
+            _spriteBatch.End();
 
             base.Draw(gameTime);
         }
